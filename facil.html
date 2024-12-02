@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/ponto-de-interrogacao.png" type="image/x-icon">
+</head>
+<body>
+    <div id="menu2">
+        <a style="text-decoration: none; color: black;" href="./regras.html">Regras</a>
+    </div>
+    <main>
+        <section id="fundo">
+            <div class="fileira">
+                <img src="./images/um.png" alt="imagem1" id="numero1">
+                <img src="./images/dois.png" alt="imagem2" id="numero2">
+                <img src=".//images/nove.png" alt="imagem9" id="numero9">
+                <img src="./images/sete.png" alt="">
+            </div>
+            <div class="fileira" id="teste">
+                <img src="./images/zero.png" alt="">
+                <img src="./images/tres.png" alt="">
+                <img src="./images/quatro.png" alt="">
+                <img src="./images/um-2.png" alt="">
+                <img src="./images/cinco-2.png" alt="">
+            </div>
+            <div class="fileira">
+                <img src="./images/seis.png" alt="imagem1" id="numero1">
+                <img src="./images/oito-2.png" alt="imagem2" id="numero2">
+                <img src=".//images/zero-2.png" alt="imagem9" id="numero9">
+                <img src="./images/tres-2.png" alt="">
+            </div>
+            <div class="fileira" id="colunas">
+                <img src="./images/nove-3.png" alt="">
+                <img src="./images/um-3.png" alt="">
+                <img src="./images/dois-3.png" alt="">
+                <img src="./images/seis-2.png" alt="">
+                <img src="./images/sete-3.png" alt="">
+            </div>
+            <div class="fileira">
+                <img src="./images/zero-3.png" alt="imagem1" id="numero1">
+                <img src="./images/quatro-2.png" alt="imagem2" id="numero2">
+                <img src=".//images/tres-3.png" alt="imagem9" id="numero9">
+                <img src="./images/dois-4.png" alt="">
+            </div>
+            <div class="fileira" id="colunas2">
+                <img src="./images/seis-3.png" alt="">
+                <img src="./images/sete-4.png" alt="">
+                <img src="./images/nove-4.png" alt="">
+                <img src="./images/cinco.png" alt="">
+                <img src="./images/oito.png" alt="">
+            </div>
+            <div class="fileira">
+                <img src="./images/cinco-2.png" alt="imagem1" id="numero1">
+                <img src="./images/zero-2.png" alt="imagem2" id="numero2">
+                <img src="./images/oito-2.png" alt="imagem9" id="numero9">
+                <img src="./images/tres.png" alt="">
+            </div>
+            <div class="fileira" id="colunas3">
+                <img src="./images/nove.png" alt="">
+                <img src="./images/dois.png" alt="">
+                <img src="./images/seis.png" alt="">
+                <img src="./images/sete-4.png" alt="">
+                <img src="./images/nove-4.png" alt="">
+            </div>
+        </section>
+        <section id="principal">
+            <div class="topo">
+                <a href="./jogo.html"><img src="./images/seta-esquerda.png" alt="seta para sair"></a> 
+                <h1>Bem-vindo ao nível fácil</h1>
+                <div id="menu" onclick="aberta()">
+                    <span id="linha1"></span><span id="linha2"></span><span id="linha3"></span>
+                </div>
+            </div>
+            <div class="conteudo">
+                <p>Escolha um número entre 1 e 10</p>
+                <p id="tentativa"></p>
+            </div>
+            <div class="sorteio">
+                <p style="font-family: Arial;" id="maior_menor"></p>
+                <input type="number" name="txtnumero" id="txtnumero" min="1" max="10" required>
+                <button onclick="sorteia_facil()" id="enviar">Enviar</button>
+                <p style="font-size: 18px; font-family: Arial;" id="ganhou"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/facil.js"></script>
+
+</body>
+</html>

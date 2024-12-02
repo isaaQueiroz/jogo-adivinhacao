@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Tiny5", sans-serif;;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 239, 239);
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+#fundo{
+    width: 99%;
+    height: 97%;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 3px; 
+}
+.fileira{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.fileira img{
+    padding-top: 8px;
+    width: 80px;
+    animation: girando ease-in-out 7s infinite; 
+}
+#teste img{
+    animation: rodando ease-in-out 7s infinite;
+}
+#colunas2 img{ 
+    animation: rodando ease-in-out 7s infinite;
+}
+@keyframes girando{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}  
+}
+@keyframes rodando{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-90deg);}
+    50% {transform: rotate(-180deg);}
+    75% {transform: rotate(-270deg);}
+    100% {transform: rotate(-360deg);}  
+}
+#teste, #colunas, #colunas2, #colunas3{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
+#jogar{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+#box{
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border: 1ps solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#titulo{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#play{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+}
+#inicio{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#niveis{
+    width: 90%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.568);
+    position: absolute;
+    top: 44px;
+    left: 70px;
+    border-radius: 15px;
+}
+#niveis img{
+    width: 30px;
+    padding: 5px;
+}
+#everybody{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards{
+    width: 300px;
+    height: 270px;
+    background-color: #6CB3D9;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 23px;
+}
+#amarelo{
+    background-color: #f8f835;
+}
+#vermelho{
+    background-color: #fa3232;
+}
+#everybody img{
+    width: 100px;
+    height: 100px;
+}
+.other{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+#menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px;
+    padding-right: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+span{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    
+}
+#cabecalho{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu2{
+    width: 200px;
+    height: 140px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 48px;
+    right: 73px;
+    z-index: 10;
+    display: none;
+    font-size: 20px;
+}
+.menu_aberto{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.cards2{
+    width: 300px;
+    height: 270px;
+    background-color: #6CB3D9;
+    border-radius: 15px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+.cards2 p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-left: 6px;
+    align-items: center;
+    padding-left: 8px;
+    
+}
+#principal{
+    width: 60%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 70px;
+    left: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 25px;
+    flex-direction: column;
+}
+.topo{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 8px;
+}
+.topo img{
+    width: 35px;
+}
+.conteudo{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.conteudo p{
+    font-family: Arial;
+}
+.sorteio{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+input{
+    width: 40%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+button{
+    width: 15%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #1EE829;
+    cursor: pointer;
+}
+
